@@ -1,0 +1,695 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', Helvetica, Arial, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    background: #2F343A;
+}
+
+.container {
+    max-width: 1108px;
+    margin: 0 auto;
+}
+
+.top {
+    background: #C8A35F;
+}
+
+.top_wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 0;
+}
+
+.language_item {
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 14px;
+    margin-right: 10px;
+    color: #FFFFFF;
+    opacity: 0.5;
+}
+
+.selected {
+    opacity: 1;
+}
+
+.top-phone {
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.top-mail {
+    font-size: 12px;
+    line-height: 14px;
+    text-align: right;
+    color: #FFFFFF;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 27px 0;
+}
+
+.header__logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    max-width: 160px;
+    height: auto;
+    margin-right: 30px;
+}
+
+.header__line {
+    border: 1px solid #F2F2F2;
+    width: 46px;
+    transform: rotate(90deg);
+}
+
+.offices__link {
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    position: relative;
+    padding-left: 65px;
+    text-decoration: none;
+}
+
+.offices__link::before {
+    content: url('img/placeholder.svg');
+    width: 25px;
+    height: auto;
+    position: absolute;
+    left: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.header__menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu__item {
+    list-style-type: none;
+}
+
+.menu__link {
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-left: 30px;
+    padding: 27px 0;
+}
+
+.main_img {
+    background-image: url('img/Rectangle_2.png');
+    padding: 155px 0 220px;
+    background-position: center;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.main_img_box {
+    max-width: 777px;
+    margin: 0 auto;
+    border: 1px solid #C8A35F;
+    padding: 45px 72px;
+}
+
+.main_img_heading {
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 75px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    padding-bottom: 25px;
+}
+
+.main_img_text {
+    font-size: 18px;
+    line-height: 28px;
+    text-align: center;
+    color: #FFFFFF;
+    max-width: 50 cv;
+}
+
+.scroll {
+    position: absolute;
+    bottom: 50px;
+    left: 49%;
+}
+
+.description {
+    background: #393F47;
+}
+
+.description_wrapper {
+    display: flex;
+}
+
+.description_more {
+    width: 30%;
+    z-index: 1;
+}
+
+.description_hr {
+    margin-top: 120px;
+    width: 90px;
+    height: 6px;
+    background: #C8A35F;
+    border: none;
+}
+
+.description_header {
+    margin-top: 40px;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 49px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.description_text {
+    margin-top: 30px;
+    font-size: 18px;
+    line-height: 28px;
+    color: #FFFFFF;
+}
+
+.description_button {
+    display: inline-block;
+    margin-top: 50px;
+    padding: 18px 48px;
+    background: #C8A35F;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 25px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-decoration: none;
+    margin-bottom: 129px;
+}
+
+.car_img_box {
+    width: 40%;
+    max-width: 410px;
+    background: #2F343A;
+    position: relative;
+}
+
+.car_img {
+    position: absolute;
+    bottom: 155px;
+    left: 125px;
+}
+
+.next_prev {
+    width: 30%
+}
+
+.next {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 25px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #C8A35F;
+    margin-top: 156px;
+    margin-left: 189px;
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.next::after {
+    content: url('img/Arrow.svg');
+    width: 65px;
+    height: auto;
+    position: absolute;
+    left: 89px;
+    top: 50%;
+    transform: translateY(-40%);
+}
+
+.prev {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 25px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #C8A35F;
+    margin-top: 240px;
+    margin-left: 285px;
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.prev::before {
+    content: url('img/Arrow_1.svg');
+    width: 65px;
+    height: auto;
+    position: absolute;
+    left: -97px;
+    top: 50%;
+    transform: translateY(-40%);
+}
+
+.services_hr {
+    margin-top: 120px;
+    width: 90px;
+    height: 6px;
+    background: #C8A35F;
+    border: none;
+}
+
+.services_header {
+    margin-top: 40px;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 49px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.services_card_box {
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(275px, auto));
+    grid-template-rows: auto;
+}
+
+.services_card {
+    background: #393F47;
+    margin: 1px;
+}
+
+.services_card:hover {
+    background: #C8A35F;
+}
+
+.services_text {
+    text-align: center;
+}
+
+.services_text_link {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-decoration: none;
+    display: block;
+    padding: 128px 42px 30px;
+    position: relative;
+}
+
+.services_text_link::before {
+    content: url('img/airplane-flight-white.svg');
+    width: 30px;
+    height: auto;
+    position: absolute;
+    left: 44%;
+    top: 40%;
+    transform: translateY(-50%);
+}
+
+.services_card:hover .services_text_link::before {
+    content: url('img/airplane-flight-black.svg');
+}
+
+.about_box {
+    display: flex;
+    margin-top: 200px;
+    margin-bottom: 200px;
+    justify-content: space-between;
+    position: relative;
+}
+
+.about {
+    width: 45%;
+    margin-right: 17px;
+}
+
+.about_hr {
+    width: 90px;
+    height: 6px;
+    background: #C8A35F;
+    border: none;
+}
+
+.about_header {
+    margin-top: 40px;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 49px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.about_description {
+    font-size: 16px;
+    line-height: 23px;
+    color: #FFFFFF;
+    margin-top: 17px;
+    padding-right: 30px;
+}
+
+.about_card_box {
+    width: 55%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 200px);
+    grid-template-rows: auto;
+}
+
+.about_card {
+    background: #FFFFFF;
+    border: 0.25px solid #C8A35F;
+    height: 160px;
+}
+
+.about_dig {
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 75px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #2F343A;
+    margin-top: 21px;
+}
+
+.about_text {
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: #000000;
+}
+
+.about_text_small {
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    color: #000000;
+}
+
+.about_back_block {
+    width: 40%;
+    height: 46vh;
+    background: #393F47;
+    position: absolute;
+    z-index: -1;
+    left: 32%;
+    top: -77px;
+}
+
+footer {
+    background: #C8A35F;
+    padding: 55px 0;
+}
+
+.footer_wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    line-height: 22px;
+}
+
+.address {
+    font-size: 14px;
+    color: #F2F2F2;
+    opacity: 0.8;
+}
+
+.email {
+    font-size: 14px;
+    color: #2F343A;
+}
+
+.phone {
+    font-size: 14px;
+    color: #F2F2F2;
+}
+
+.dev {
+    font-size: 14px;
+    line-height: 16px;
+    text-align: right;
+    text-decoration-line: underline;
+    color: #2F343A;
+}
+
+
+/* responsive */
+
+@media screen and (max-width: 1170px) {
+    .top_wrapper {
+        padding: 16px 10px;
+    }
+
+    .header {
+        padding: 27px 10px;
+    }
+
+    .description_wrapper {
+        padding: 0 10px;
+    }
+
+    .next {
+        margin-left: 89px;
+    }
+
+    .prev {
+        margin-left: 185px;
+    }
+
+    .services_card_box {
+        padding: 0 10px;
+    }
+
+    .about_box,
+    .services_header,
+    .footer_wrapper {
+        padding: 0 10px;
+    }
+
+    .services_hr {
+        margin-left: 10px;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .main_img_heading {
+        font-size: 54px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .header {
+        flex-direction: column;
+    }
+
+    .header__menu {
+        padding-top: 27px;
+    }
+
+    .menu__link {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .car_img {
+        left: 50px;
+    }
+}
+
+@media screen and (max-width: 830px) {
+    .description_wrapper {
+        flex-direction: column;
+    }
+
+    .description_more {
+        width: 100%;
+    }
+
+    .car_img_box {
+        width: 100%;
+        max-width: 100%;
+        background: #393F47;
+        position: static;
+        display: flex;
+        justify-content: center;
+    }
+
+    .car_img {
+        position: static;
+        max-width: 410px;
+        height: auto;
+        width: 100%;
+    }
+
+    .next_prev {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .next {
+        margin: 30px;
+    }
+
+    .prev {
+        margin: 30px;
+    }
+
+    footer {
+        padding: 35px 0;
+    }
+
+    .footer_wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer_wrapper .logo {
+        margin-right: 0;
+    }
+
+    .footer_wrapper,
+    .email {
+        text-align: center;
+    }
+
+    .phone {
+        padding-bottom: 5px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .about_box {
+        flex-wrap: wrap;
+        margin: 100px 0;
+    }
+
+    .about {
+        width: 100%;
+    }
+
+    .about_description {
+        padding-right: 0;
+        padding-bottom: 30px;
+    }
+
+    .about_card_box {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .about_back_block {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .main_img {
+        padding: 105px 0 150px;
+    }
+
+    .main_img_box {
+        padding: 45px 30px;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+    .header__logo {
+        flex-direction: column;
+    }
+
+    .logo {
+        margin-right: 0;
+    }
+
+    .header__line {
+        display: none;
+    }
+
+    .offices__link {
+        padding-top: 20px;
+        padding-right: 35px;
+    }
+
+    .offices__link::before {
+        transform: translateY(-25%);
+    }
+
+    .header__menu {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .menu__item {
+        padding: 7px;
+    }
+
+    .menu__link {
+        padding: 7px;
+    }
+
+    .main_img_heading {
+        font-size: 40px;
+        line-height: 55px;
+    }
+
+}
+
+@media screen and (max-width: 450px) {
+
+    .description_header,
+    .about_header,
+    .services_header {
+        font-size: 28px;
+        line-height: 40px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .top_wrapper {
+        flex-direction: column;
+    }
+
+    .language_item {
+        margin-right: 5px;
+        margin-left: 5px;
+    }
+}
